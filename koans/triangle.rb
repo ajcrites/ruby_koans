@@ -23,13 +23,11 @@ def triangle(a, b, c)
    end
 
   if a == b and b == c
-     return :equilateral
+     :equilateral
+  elsif a == b or b == c or a == c
+     :isosceles
   else
-     if a == b or b == c or a == c
-       return :isosceles
-     else
-       return :scalene
-     end
+     :scalene
   end
 end
 
